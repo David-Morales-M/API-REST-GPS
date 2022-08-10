@@ -24,9 +24,4 @@ def hello_world():
 
 
 if __name__ == '__main__':
-    """request = Request(
-        f'https://private-anon-33e1d25a3b-flokzu.apiary-mock.com/flokzuopenapi/api/{apiKey}/database'
-        f'/Inventario_Desperdicios', data=items, headers=headers)
-    request.get_method = lambda: 'PUT'
-    """
     app.run()
