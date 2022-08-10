@@ -8,6 +8,10 @@ headers = {"Content-Type": "application/json",
            "X-Username": "bryan.palma02@epn.edu.ec"}
 
 
+@app.route('/')
+def hello():
+    return "Hola mundo"
+
 @app.route('/inventario_insumos', methods=['POST'])
 def hello_world():
     json_data = request.form
