@@ -16,11 +16,7 @@ def hello():
 def hello_world():
     json_data = request.form
     tabla=json_data["tabla"]
-    for item in tabla:
-        requests.put(f"https://app.flokzu.com/flokzuopenapi/api/{apiKey}/database"
-                     "/PRO_Inventario_Insumos_Materiales", json_data, "", headers)
-    return 0
-
+    return tabla
 
 if __name__ == '__main__':
     app.run()
